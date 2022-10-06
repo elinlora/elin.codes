@@ -42,8 +42,11 @@ body {
 /* Layout */
 
 header {
-  padding: 1.2em 0;
+  padding: 1em 0;
   background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 
 header .container {
@@ -203,13 +206,43 @@ nav {
 
 @media only screen and (min-width: 62em) {
   .btn {
-    color: #fff;
-    border: unset;
-    background-color: #9F2B68;
+    display: none;
   }
 }
 
 .btn:hover,
 .btn:focus {
   opacity: 70%;
+}
+
+.hero-socials {
+  margin-top: 3.6em;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+@media only screen and (min-width: 62em) {
+  .hero-socials {
+    margin-top: .5em;
+  }
+}
+
+.social-icon {
+  color: #fff;
+}
+
+@media only screen and (min-width: 62em) {
+  .social-icon {
+    color: #000;
+  }
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  opacity: 70%;
+}
+
+.social-icon i {
+  font-size: 2.1rem;
 }
