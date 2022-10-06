@@ -192,7 +192,7 @@ nav {
 
 @media only screen and (min-width: 62em) {
   .hero-buttons {
-    justify-content: unset;
+    display: none;
   }
 }
 
@@ -202,12 +202,6 @@ nav {
   width: 9rem;
   border: 2px solid #fff;
   border-radius: .5rem;
-}
-
-@media only screen and (min-width: 62em) {
-  .btn {
-    display: none;
-  }
 }
 
 .btn:hover,
@@ -224,7 +218,7 @@ nav {
 
 @media only screen and (min-width: 62em) {
   .hero-socials {
-    margin-top: .5em;
+    margin-top: unset;
   }
 }
 
@@ -235,6 +229,7 @@ nav {
 @media only screen and (min-width: 62em) {
   .social-icon {
     color: #000;
+    margin-top: 2em;
   }
 }
 
