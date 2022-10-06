@@ -18,7 +18,81 @@ img {
   max-width: 100%;
 }
 
+:root {
+
+  --ff-primary: Poppins, sans-serif;
+  --ff-secondary: 'Bodoni Moda', serif;
+
+}
+
 body {
   min-height: 100vh;
   min-width: 100vw;
+  background-color: #fff;
+  font-family: var(--ff-primary);
+}
+
+
+/* Layout */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 62rem;
+}
+/* Layout */
+
+header {
+  padding: 1.2em 0;
+  background-color: #fff;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--ff-secondary);
+  font-size: 2rem;
+  font-weight: 800;
+  font-style: italic;
+  color: #000;
+}
+
+.logo:hover,
+.logo:focus {
+  color: cornflowerblue;
+}
+
+.hamburger-menu {
+  width: 2.1rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 62em) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+nav {
+  display: none;
+}
+
+@media only screen and (min-width: 62em) {
+  nav {
+    display: flex;
+    gap: 2.1em;
+  }
+
+  nav a {
+    color: #000;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    color: cornflowerblue;
+    text-decoration: underline 3px;
+  }
 }
