@@ -158,7 +158,8 @@ nav {
 }
 
 .hero-card p {
-  width: 24rem;
+  min-width: 21rem;
+  max-width: 24rem;
   margin: 0 auto;
   opacity: 90%;
 }
@@ -166,7 +167,7 @@ nav {
 @media only screen and (min-width: 62em) {
   .hero-card p {
     margin: unset;
-    width: unset;
+    max-width: unset;
     font-size: 1.2rem;
     opacity: unset;
   }
