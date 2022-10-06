@@ -256,11 +256,6 @@ nav {
   padding: 4.5em 0;
 }
 
-.skills .container {
-  display: grid;
-  grid-template-columns: 1em 1fr 1em;
-}
-
 .skills h3 {
   grid-column: 1 / -1;
   text-align: center;
