@@ -361,7 +361,7 @@ nav {
 
 .project {
   width: 20rem;
-  height: 10rem;
+  height: 12rem;
   background-image: url('/img/goby-p.png');
   background-size: cover;
   transition: all .3s ease-in-out;
@@ -412,6 +412,18 @@ nav {
 
 .fast {
   background-image: url('/img/fast-thumbnail.png');
+}
+
+.confect {
+  background-image: url('/img/confect-thumbnail.png');
+}
+
+.cxl {
+  background-image: url('/img/cxl-thumbnail.png');
+}
+
+.pexa-park {
+  background-image: url('/img/pexa-park-thumbnail.png');
 }
 
 footer {
