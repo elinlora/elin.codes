@@ -359,21 +359,6 @@ nav {
   gap: 2em;
 }
 
-.project {
-  width: 20rem;
-  height: 12rem;
-  background-image: url('/img/goby-p.png');
-  background-size: cover;
-  transition: all .3s ease-in-out;
-  border-radius: .3rem;
-  box-shadow: 0px 0px 6px 1.5px rgba(0,0,0,0.07);
-}
-
-.project:hover {
-  opacity: 70%;
-  transform: scale(102%);
-}
-
 .project-email {
   width: 10rem;
   height: 21rem;
@@ -385,6 +370,17 @@ nav {
   background-repeat: no-repeat;
 }
 
+.project-web {
+  width: 20rem;
+  height: 12rem;
+  background-image: url('/img/goby-p.png');
+  background-size: cover;
+  transition: all .3s ease-in-out;
+  border-radius: .3rem;
+  box-shadow: 0px 0px 6px 1.5px rgba(0,0,0,0.07);
+}
+
+.project-web:hover,
 .project-email:hover {
   opacity: 70%;
   transform: scale(102%);
