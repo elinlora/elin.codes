@@ -426,6 +426,10 @@ nav {
   background-image: url('/img/pexa-park-thumbnail.png');
 }
 
+.goby {
+  background-image: url('/img/goby-thumbnail.png');
+}
+
 footer {
   background-color: #000;
   color: #fff;
