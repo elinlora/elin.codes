@@ -374,6 +374,46 @@ nav {
   transform: scale(102%);
 }
 
+.project-email {
+  width: 10rem;
+  height: 21rem;
+  transition: all .3s ease-in-out;
+  border-radius: .3rem;
+  box-shadow: 0px 0px 6px 1.5px rgba(0,0,0,0.07);
+  background-size: 25rem;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.project-email:hover {
+  opacity: 70%;
+  transform: scale(102%);
+}
+
+.article {
+  background-image: url('/img/article-thumbnail.png');
+}
+
+.home-run {
+  background-image: url('/img/home-run-thumbnail.png');
+}
+
+.tens {
+  background-image: url('/img/tens-thumbnail.png');
+}
+
+.equal-parts {
+  background-image: url('/img/equal-parts-thumbnail.png');
+}
+
+.the-information {
+  background-image: url('/img/the-information-thumbnail.png');
+}
+
+.fast {
+  background-image: url('/img/fast-thumbnail.png');
+}
+
 footer {
   background-color: #000;
   color: #fff;
