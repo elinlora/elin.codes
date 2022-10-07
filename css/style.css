@@ -24,6 +24,7 @@ img {
   --clr-primary-500: #D8BFD8;
   --clr-primary-600: #353935;
   --clr-primary-700: #6082B6;
+  --clr-primary-800: #FAF9F6;
 
   --ff-primary: Poppins, sans-serif;
   --ff-secondary: 'Libre Baskerville', serif;
@@ -33,7 +34,7 @@ img {
 body {
   min-height: 100vh;
   min-width: 100vw;
-  background-color: #fff;
+  background-color: var(--clr-primary-800);
   color: var(--clr-primary-600);
   font-family: var(--ff-primary);
 }
@@ -49,7 +50,7 @@ body {
 
 header {
   padding: 1em 0;
-  background-color: #fff;
+  background-color: var(--clr-primary-800);
   position: sticky;
   top: 0;
   z-index: 99;
@@ -124,7 +125,7 @@ nav {
 
 @media only screen and (min-width: 62em) {
   .hero {
-    background-color: #D8BFD8;
+    background-color: var(--clr-primary-500);
   }
 }
 
@@ -135,7 +136,7 @@ nav {
 
 @media only screen and (min-width: 62em) {
   .hero-card {
-    background-color: #fff;
+    background-color: var(--clr-primary-800);
     max-width: 42rem;
     padding: 3em;
     border-radius: .5rem;
@@ -318,7 +319,7 @@ nav {
 }
 
 .projects {
-
+  padding: 0 0 4.5em;
 }
 
 .projects h3 {
@@ -341,12 +342,39 @@ nav {
 }
 
 .project-title {
-  font-size: 3.3rem;
+  font-size: 2.4rem;
   text-align: center;
+  margin: 1em 0;
+}
+
+.email > .project-title {
+  margin-top: unset;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.project {
+  width: 20rem;
+  height: 10rem;
+  background-image: url('/img/goby-p.png');
+  background-size: cover;
+  transition: all .3s ease-in-out;
+  border-radius: .3rem;
+  box-shadow: 0px 0px 6px 1.5px rgba(0,0,0,0.07);
+}
+
+.project:hover {
+  opacity: 70%;
+  transform: scale(102%);
 }
 
 footer {
-  background-color: var(--clr-primary-600);
+  background-color: #000;
   color: #fff;
   padding: 3em 0;
   text-align: center;
