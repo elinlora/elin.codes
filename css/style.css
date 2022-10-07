@@ -34,7 +34,7 @@ img {
 body {
   min-height: 100vh;
   min-width: 100vw;
-  background-color: var(--clr-primary-800);
+  background-color: #fff;
   color: var(--clr-primary-600);
   font-family: var(--ff-primary);
 }
@@ -130,13 +130,13 @@ nav {
 }
 
 .hero-card {
-  color: #fff;
+  color: var(--clr-primary-800);
   text-align: center;
 }
 
 @media only screen and (min-width: 62em) {
   .hero-card {
-    background-color: var(--clr-primary-800);
+    background-color: #fff;
     max-width: 42rem;
     padding: 3em;
     border-radius: .5rem;
@@ -212,10 +212,10 @@ nav {
 }
 
 .btn {
-  color: #fff;
+  color: var(--clr-primary-800);
   padding: 1em 0;
   width: 9rem;
-  border: 2px solid #fff;
+  border: 2px solid var(--clr-primary-800);
   border-radius: .5rem;
 }
 
@@ -238,7 +238,7 @@ nav {
 }
 
 .social-icon {
-  color: #fff;
+  color: var(--clr-primary-800);
 }
 
 @media only screen and (min-width: 62em) {
@@ -319,7 +319,7 @@ nav {
 }
 
 .projects {
-  padding: 0 0 4.5em;
+  padding: 0 0 6em;
 }
 
 .projects h3 {
@@ -345,6 +345,7 @@ nav {
   font-size: 2.4rem;
   text-align: center;
   margin: 1em 0;
+  text-decoration: underline .3rem var(--clr-primary-500);
 }
 
 .email > .project-title {
