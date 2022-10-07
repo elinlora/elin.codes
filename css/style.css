@@ -257,7 +257,6 @@ nav {
 }
 
 .skills h3 {
-  grid-column: 1 / -1;
   text-align: center;
   font-size: 3rem;
   font-weight: 800;
@@ -277,11 +276,16 @@ nav {
 }
 
 .skill-icons {
-  grid-column: 2 / -2;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, auto);
   gap: 3em;
   margin-top: 3em;
+}
+
+@media only screen and (min-width: 48em) {
+  .skill-icons {
+    grid-template-columns: repeat(3, auto);
+  }
 }
 
 @media only screen and (min-width: 62em) {
@@ -291,7 +295,6 @@ nav {
 }
 
 .skill-icons div {
-  justify-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
