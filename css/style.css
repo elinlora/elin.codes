@@ -39,14 +39,12 @@ body {
   font-family: var(--ff-primary);
 }
 
-
-/* Layout */
+/* ======> Layout <====== */
 .container {
   width: 90%;
   margin: 0 auto;
   max-width: 90rem;
 }
-/* Layout */
 
 header {
   padding: 1em 0;
@@ -326,6 +324,10 @@ nav {
   padding: 0 0 6em;
 }
 
+.projects .container {
+  max-width: 75rem;
+}
+
 .projects h3 {
   text-align: center;
   font-size: 3rem;
@@ -429,6 +431,10 @@ nav {
 
 .goby {
   background-image: url('/img/goby-thumbnail.png');
+}
+
+.reel {
+  background-image: url('/img/reel-thumbnail.png');
 }
 
 footer {
