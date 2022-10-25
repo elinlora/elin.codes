@@ -417,6 +417,14 @@ nav {
   opacity: 90%;
 }
 
+.more-projects .project-grid:nth-of-type(1) {
+  margin-top: 6em;
+}
+
+.more-projects .project-grid:nth-of-type(2) {
+  margin-top: 2em;
+}
+
 /* ======> Email Images <====== */
 .article {
   background-image: url('/img/article-thumbnail.png');
