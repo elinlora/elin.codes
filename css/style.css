@@ -25,6 +25,7 @@ img {
   --clr-primary-600: #353935;
   --clr-primary-700: #6082B6;
   --clr-primary-800: #FAF9F6;
+  --clr-primary-900: #E35335;
 
   --ff-primary: Poppins, sans-serif;
   --ff-secondary: 'Libre Baskerville', serif;
@@ -393,6 +394,30 @@ nav {
   transform: scale(102%);
 }
 
+.button {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.see-all {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: .12rem;
+  border-radius: .5rem;
+  background-color: var(--clr-primary-900);
+  box-shadow: 0px 6px 10px 0px rgba(227,83,53,0.30);
+  padding: .9em 1.8em;
+}
+
+.see-all:hover,
+.see-all:focus {
+  opacity: 90%;
+}
+
+/* ======> Email Images <====== */
 .article {
   background-image: url('/img/article-thumbnail.png');
 }
@@ -417,6 +442,32 @@ nav {
   background-image: url('/img/fast-thumbnail.png');
 }
 
+.apple {
+  background-image: url('/img/apple.png');
+}
+
+.google {
+  background-image: url('/img/google.png');
+}
+
+.facebook {
+  background-image: url('/img/facebook.png');
+}
+
+.uber {
+  background-image: url('/img/uber.png');
+}
+
+.spotify {
+  background-image: url('/img/spotify.png');
+}
+
+.netflix {
+  background-image: url('/img/netflix.png');
+}
+/* ======> / Email Images <====== */
+
+/* ======> Landing Page Images <====== */
 .confect {
   background-image: url('/img/confect-thumbnail.png');
 }
@@ -436,6 +487,7 @@ nav {
 .reel {
   background-image: url('/img/reel-thumbnail.png');
 }
+/* ======> / Landing Page Images <====== */
 
 footer {
   background-color: #000;
