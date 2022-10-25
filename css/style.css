@@ -498,4 +498,6 @@ footer {
   color: #fff;
   padding: 3em 0;
   text-align: center;
+  position: fixed;
+  bottom: 0;
 }
