@@ -491,6 +491,10 @@ nav {
 .reel {
   background-image: url('/img/reel-thumbnail.png');
 }
+
+.tushy {
+  background-image: url('/img/tushy-thumbnail.png');
+}
 /* ======> / Landing Page Images <====== */
 
 footer {
