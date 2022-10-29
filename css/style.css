@@ -115,27 +115,41 @@ header .container {
 }
 
 nav {
-  /* display: none; */
   position: fixed;
-  left: -100%;
-  top: 70px;
+  right: -100%;
+  top: 65px;
   display: flex;
   flex-direction: column;
-  background-color: cornflowerblue;
+  gap: 1.5em;
+  padding: 1.5em 0;
+  background-color: var(--clr-primary-800);
   width: 100%;
   text-align: center;
   transition: .3s;
 }
 
 nav.active {
-  left: 0;
+  right: 0;
 }
+
+nav a {
+  color: var(--clr-primary-600);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--clr-primary-700);
+  text-decoration: underline 3px;
+}
+
 
 @media only screen and (min-width: 62em) {
   nav {
     display: flex;
     gap: 2.7em;
-
+    /* Removing mobile nav classes */
     position: unset;
     left: unset;
     top: unset;
