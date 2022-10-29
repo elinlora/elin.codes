@@ -81,25 +81,68 @@ header .container {
   color: var(--clr-primary-700);
 }
 
-.hamburger-menu {
-  width: 2.1rem;
+.hamburger {
   cursor: pointer;
 }
 
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  border-radius: 1rem;
+  background-color: var(--clr-primary-600);
+  transition: all .3s ease-in-out;
+}
+
 @media only screen and (min-width: 62em) {
-  .hamburger-menu {
+  .hamburger {
     display: none;
   }
 }
 
 nav {
-  display: none;
+  /* display: none; */
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  background-color: cornflowerblue;
+  width: 100%;
+  text-align: center;
+  transition: .3s;
+}
+
+nav.active {
+  left: 0;
 }
 
 @media only screen and (min-width: 62em) {
   nav {
     display: flex;
     gap: 2.7em;
+
+    position: unset;
+    left: unset;
+    top: unset;
+    flex-direction: unset;
+    background-color: unset;
+    width: unset;
+    text-align: unset;
+    transition: unset;
   }
 
   nav a {
