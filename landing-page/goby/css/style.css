@@ -182,7 +182,7 @@ header nav {
 }
 
 .hero {
-  background-image: url('/img/goby-hero-mobile.jpg');
+  background-image: url('../img/goby-hero-mobile.jpg');
   background-size: cover;
   background-position: center;
   padding: 2.4em 0;
@@ -195,7 +195,7 @@ header nav {
 
 @media only screen and (min-width: 62em) {
   .hero {
-    background-image: url('/img/goby-hero-desktop.jpg');
+    background-image: url('../img/goby-hero-desktop.jpg');
     padding: 4.5em 0;
     height: 42rem;
   }
@@ -324,7 +324,7 @@ header nav {
 }
 
 .sub-hero {
-  background-image: url('/img/sub-hero-mobile.jpg');
+  background-image: url('../img/sub-hero-mobile.jpg');
   background-size: cover;
   background-position: center;
   padding: 3em 0;
@@ -333,7 +333,7 @@ header nav {
 
 @media only screen and (min-width: 62em) {
   .sub-hero {
-    background-image: url('/img/sub-hero-desktop.jpg');
+    background-image: url('../img/sub-hero-desktop.jpg');
     height: 37rem;
     display: grid;
     place-content: center;
@@ -626,7 +626,7 @@ header nav {
 
 @media only screen and (min-width: 62em) {
   .reviews {
-    background-image: url('/img/goby-bg-left.png'), url('/img/goby-bg-right.png');
+    background-image: url('../img/goby-bg-left.png'), url('../img/goby-bg-right.png');
     background-position: left, right;
     background-size: 30rem, 30rem;
     background-repeat: no-repeat;

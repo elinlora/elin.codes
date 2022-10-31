@@ -68,6 +68,7 @@ header .container {
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--clr-primary-600);
+  cursor: default;
 }
 
 @media only screen and (min-width: 48em) {

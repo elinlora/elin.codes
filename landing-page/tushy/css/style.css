@@ -255,7 +255,7 @@ header {
 .hero {
   height: 21rem;
   width: 100vw;
-  background-image: url('/img/beige-wave.png'), url('/img/hero-mobile.jpg');
+  background-image: url('../img/beige-wave.png'), url('../img/hero-mobile.jpg');
   background-size: 70rem, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center;
@@ -264,14 +264,14 @@ header {
 @media only screen and (min-width: 48em) {
   .hero {
     height: 50rem;
-    background-image: url('/img/green-wave.png'), url('/img/hero-tablet.jpg');
+    background-image: url('../img/green-wave.png'), url('../img/hero-tablet.jpg');
     background-size: 120rem, cover;
   }
 }
 
 @media only screen and (min-width: 62em) {
   .hero {
-    background-image: url('/img/green-wave.png'), url('/img/hero-desktop.jpg');
+    background-image: url('../img/green-wave.png'), url('../img/hero-desktop.jpg');
     background-size: 180rem, cover;
   }
 }
@@ -352,7 +352,7 @@ header {
 }
 
 .sub-mobile-hero {
-  background-image: url('/img/green-wave.png');
+  background-image: url('../img/green-wave.png');
   background-size: 70rem;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -385,7 +385,7 @@ header {
 
 .social-proof {
   background-color: var(--clr-primary-600);
-  background-image: url('/img/beige-wave.png');
+  background-image: url('../img/beige-wave.png');
   background-size: 70rem;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -564,7 +564,7 @@ header {
 
 .tushy-bamboo-towel {
   background-color: var(--clr-primary-700);
-  background-image: url('/img/white-wave.png');
+  background-image: url('../img/white-wave.png');
   background-size: 70rem;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -601,7 +601,7 @@ header {
 
 .bestsellers {
   background-color: #ffffff;
-  background-image: url('/img/green-wave.png');
+  background-image: url('../img/green-wave.png');
   background-size: 70rem;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -676,7 +676,7 @@ header {
 
 .reviews {
   background-color: var(--clr-primary-600);
-  background-image: url('/img/white-wave.png');
+  background-image: url('../img/white-wave.png');
   background-size: 70rem;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -719,23 +719,23 @@ header {
 }
 
 .caleb {
-  background-image: url('/img/caleb.gif');
+  background-image: url('../img/caleb.gif');
   background-size: cover;
 }
 .matt {
-  background-image: url('/img/matt.gif');
+  background-image: url('../img/matt.gif');
   background-size: cover;
 }
 .michelle {
-  background-image: url('/img/michelle.gif');
+  background-image: url('../img/michelle.gif');
   background-size: cover;
 }
 .ralph {
-  background-image: url('/img/ralph.gif');
+  background-image: url('../img/ralph.gif');
   background-size: cover;
 }
 .lottie {
-  background-image: url('/img/lottie.gif');
+  background-image: url('../img/lottie.gif');
   background-size: cover;
 }
 
@@ -782,7 +782,7 @@ header {
 
 .misc {
   background-color: var(--clr-primary-300);
-  background-image: url('/img/gray-wave.png');
+  background-image: url('../img/gray-wave.png');
   background-size: 70rem;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -833,7 +833,7 @@ header {
 .guaranteed {
   background-color: var(--clr-primary-800);
   text-align: center;
-  background-image: url('/img/beige-wave.png');
+  background-image: url('../img/beige-wave.png');
   background-size: 70rem;
   background-position: bottom;
   background-repeat: no-repeat;
