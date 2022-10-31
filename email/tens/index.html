@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tens</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Noto+Serif:wght@400;700&display=swap');
+
+    h1, h2, h3, h4, h5, h6, p {
+      margin: 0;
+      padding: 0;
+    }
+    table {
+      border-spacing: 0;
+    }
+    td {
+      padding: 0;
+    }
+    img {
+      border: 0;
+    }
+    .container {
+      width: 600px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+      font-family: 'Lato', sans-serif;
+      color: #666363;
+      background-color: #fff;
+    }
+    .header {
+      width: 100%;
+      background-color: #fff;
+    }
+    .header-container {
+      width: 85%;
+    }
+    .main {
+      width: 100%;
+      background-color: #fff;
+    }
+    .main-container {
+      width: 85%;
+    }
+    .footer {
+      width: 100%;
+      background-color: #fff;
+    }
+    .footer-container {
+      width: 85%;
+    }
+    /* Desktop */
+    /* @media only screen and (min-width: 960px) {
+      .container {
+        width: 960px !important;
+      }
+      .col-2 {
+        padding-top: 6em !important;
+      }
+    } */
+    /* Tablet */
+    @media only screen and (max-width: 960px) {
+      .container {
+        width: 600px !important;
+      }
+      .logo {
+        text-align: center !important;
+      }
+    }
+    /* Mobile */
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 100% !important;
+      }
+      .main-container {
+        width: 90% !important;
+      }
+      .items-ordered {
+        text-align: center !important;
+      }
+      .col-1,
+      .col-2 {
+        width: 100% !important;
+      }
+      .col-1 {
+        text-align: center !important;
+      }
+      .col-2 {
+        padding-top: 0 !important;
+        padding-bottom: 1em !important;
+      }
+      .col-img {
+        width: 240px !important;
+      }
+      .quantity {
+        padding-left: 4em !important;
+      }
+      .billing-info,
+      .shipping-info {
+        width: 100% !important;
+        text-align: center !important;
+      }
+      .billing-info {
+        padding-bottom: 3em;
+      }
+      .billing-td,
+      .shipping-td {
+        text-align: center !important;
+      }
+      .footer-container {
+        width: 80% !important;
+      }
+      .nav-td {
+        width: 160px !important;
+      }
+      .left-col-footer-table,
+      .right-col-footer-table {
+        width: 100% !important;
+      }
+      .left-col-footer-table {
+        border-bottom: 2px solid #DADADA;
+        padding-bottom: 2em !important;
+        padding-bottom: 1em !important;
+      }
+    }
+  </style>
+</head>
+<body style="margin: 0; padding: 0; max-height: 100vh; min-width: 100%; background-color: #f6f6f6;">
+  <!-- TABLE START -->
+  <table width="100%" role="presentation" cellspacing="0" cellpadding="0" align="center" border="0" bgcolor="#f6f6f6">
+    <!-- Container Row -->
+    <tr>
+      <td>
+        <!-- Container Table -->
+        <table class="container" cellspacing="0" cellpadding="0" role="presentation" border="0" align="center">
+          <!-- Header Row -->
+          <tr>
+            <td>
+              <!-- Header Table -->
+              <table class="header" cellspacing="0" cellpadding="0" role="presentation" border="0" align="center">
+                <!-- Logo Row -->
+                <tr>
+                  <td>
+                    <!-- Logo Table -->
+                    <table class="header-container" cellspacing="0" cellpadding="0" role="presentation" border="0" align="center" style="padding-bottom: 3.5em; padding-top: 3.5em;">
+                      <tr>
+                        <td align="center">
+                          <a href="#"><img class="logo" style="width: 100px;" src="img/header-logo.png" alt="tens"></a>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / Logo Table -->
+                  </td>
+                </tr>
+                <!-- / Logo Row -->
+                <!-- Order Confirmation Row -->
+                <tr>
+                  <td>
+                    <!-- Order Confirmation Table -->
+                    <table class="header-container" cellspacing="0" cellpadding="0" role="presentation" border="0" align="center" style="padding-bottom: 2em;">
+                      <tr>
+                        <td align="center" style="padding-bottom: 2em;">
+                          <h1 style="font-family: 'Noto Serif', serif; font-weight: 500; color: #4B4B4B;">Order Confirmation</h1>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="padding-bottom: 2em;">
+                          <p style="font-weight: 300; padding-bottom: 1em;">Hey Smiles Davis,</p>
+                          <p style="font-weight: 300; padding-bottom: 1em;">We've got your order! Your world is about to look a whole lot better.</p>
+                          <p style="font-weight: 300;">We'll drop you another email when your order ships.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <h2 style="font-size: 1.2em; font-weight: 600; color: #4B4B4B; text-transform: uppercase; letter-spacing: 0.05em; padding-bottom: .3em;">Order No. TensUSA-6500 </h2>
+                          <p style="font-size: .9em; font-weight: 200;">24/06/2018</p>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / Order Confirmation Table -->
+                  </td>
+                </tr>
+                <!-- / Order Confirmation Row -->
+              </table>
+              <!-- / Header Table -->
+            </td>
+          </tr>
+          <!-- / Header Row -->
+          <!-- Main Row -->
+          <tr>
+            <td>
+              <!-- Main Table -->
+              <table class="main" cellspacing="0" cellpadding="0" role="presentation" border="0" align="center">
+                <!-- Items Ordered Row -->
+                <tr>
+                  <td>
+                    <!-- Items Ordered Table -->
+                    <table class="main-container" cellspacing="0" cellpadding="0" role="presentation" border="0" align="center" style="padding-bottom: 1em;">
+                      <tr>
+                        <td>
+                          <h3 class="items-ordered" style="font-size: 1em; font-weight: 400; letter-spacing: 0.06em; color: #bdbdbd; text-transform: uppercase;">Items Ordered</h3>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / Items Ordered Table -->
+                  </td>
+                </tr>
+                <!-- / Items Ordered Row -->
+                <!-- Border Row -->
+                <tr>
+                  <td>
+                    <table class="main-container" cellspacing="0" cellpadding="0" role="presentation" style="border-bottom: 2px solid #DADADA;" border="0" align="center"></table>
+                  </td>
+                </tr>
+                <!-- / Border Row -->
+                <!-- Travel Case Row: 2 Column -->
+                <tr>
+                  <td>
+                    <!-- Travel Case Table: 2 Column -->
+                    <table class="main-container" cellspacing="0" cellpadding="0" role="presentation" border="0" align="center">
+                      <tr>
+                        <td>
+                          <!-- Column 1 Table -->
+                          <table class="col-1" width="30%" cellspacing="0" cellpadding="0" role="presentation" border="0" align="left">
+                            <tr>
+                              <td class="td-img">
+                                <img class="col-img" style="width: 100%;" src="img/travel-case.webp" alt="travel case">
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- / Column 1 Table -->
+                          <!-- Column 2 Table -->
+                          <table class="col-2" width="60%" cellspacing="0" cellpadding="0" role="presentation" border="0" align="right" style="padding-top: 3.5em;">
+                            <tr>
+                              <td>
+                                <table class="col-2-1" width="50%" cellspacing="0" cellpadding="0" role="presentation" border="0" align="left">
+                                  <tr>
+                                    <td>
+                                      <p style="letter-spacing: 0.03em; padding-bottom: .5em;">Travel Case</p>
+                                      <p style="letter-spacing: 0.03em; font-size: .8em; font-weight: 300;">Black</p>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table class="col-2-2" width="50%" cellspacing="0" cellpadding="0" role="presentation" border="0" align="right">
+                                  <tr>
+                                    <td align="right">
+                                      <p class="quantity" style="font-weight: 300; padding-left: 2em;">x 1</p>
+                                    </td>
+                                    <td align="right">
+                                      <p style="font-weight: 300;">$18.00</p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- /Column 2 Table -->
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / Travel Case Table: 2 Column -->
+                  </td>
+                </tr>
+                <!-- / Travel Case Row: 2 Column -->
+                <!-- Border Row -->
+                <tr>
+                  <td>
+                    <table class="main-container" cellspacing="0" cellpadding="0" role="presentation" style="border-bottom: 2px solid #DADADA;" border="0" align="center"></table>
+                  </td>
+                </tr>
+                <!-- / Border Row -->
+                <!-- Classic Row: 2 Column -->
+                <tr>
+                  <td>
+                    <!-- Classic Table: 2 Column -->
+                    <table class="main-container" cellspacing="0" cellpadding="0" role="presentation" border="0" align="center">
+                      <tr>
+                        <td>
+                          <!-- Column 1 Table -->
+                          <table class="col-1" width="30%" cellspacing="0" cellpadding="0" role="presentation" border="0" align="left">
+                            <tr>
+                              <td class="td-img">
+                                <img class="col-img" style="width: 100%;" src="img/classic.webp" alt="classic glasses">
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- / Column 1 Table -->
+                          <!-- Column 2 Table -->
+                          <table class="col-2" width="60%" cellspacing="0" cellpadding="0" role="presentation" border="0" align="right" style="padding-top: 3.25em;">
+                            <tr>
+                              <td>
+                                <table class="col-2-1" width="50%" cellspacing="0" cellpadding="0" role="presentation" border="0" align="left">
+                                  <tr>
+                                    <td>
+                                      <p style="letter-spacing: 0.03em; padding-bottom: .5em;">Classic</p>
+                                      <p style="letter-spacing: 0.03em; font-size: .8em; font-weight: 300;">Black</p>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table class="col-2-2" width="50%" cellspacing="0" cellpadding="0" role="presentation" border="0" align="right">
+                                  <tr>
+                                    <td align="right">
+                                      <p class="quantity" style="font-weight: 300; padding-left: 2em;">x 1</p>
+                                    </td>
+                                    <td align="right">
+                                      <p style="font-weight: 300;">$18.00</p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- /Column 2 Table -->
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / Classic Table: 2 Column -->
+                  </td>
+                </tr>
+                <!-- / Classic Row: 2 Column -->
+                <!-- Border Row -->
+                <tr>
+                  <td>
+                    <table class="main-container" cellspacing="0" cellpadding="0" role="presentation" style="border-bottom: 2px solid #DADADA;" border="0" align="center"></table>
+                  </td>
+                </tr>
+                <!-- / Border Row -->
+                <!-- Discount / Subtotal / Total Row -->
+                <tr>
+                  <td>
+                    <!-- Discount / Subtotal / Total Table -->
+                    <table class="main-container" cellspacing="0" cellpadding="0" role="presentation" border="0" align="center" style="padding-top: 1.5em; padding-bottom: 2em;">
+                      <tr>
+                        <td>
+                          <!--  Discount / Subtotal / Totall Column -->
+                          <table width="75%" cellspacing="0" cellpadding="0" role="presentation" border="0" align="left">
+                            <tr>
+                              <td>
+                                <p style="letter-spacing: 0.03em; padding-bottom: 1em;">Discount (JUSTINCASE)</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p style="letter-spacing: 0.03em; padding-bottom: 1em;">Subtotal</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p style="letter-spacing: 0.03em; padding-bottom: 1em;">Royal Mail Tracked & Signed (4-9 days)</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p style="letter-spacing: 0.03em; padding-bottom: 1em;">Total</p>
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- / Discount / Subtotal / Total Column -->
+                          <!-- Price Column -->
+                          <table width="25%" cellspacing="0" cellpadding="0" role="presentation" border="0" align="right">
+                            <tr>
+                              <td align="right">
+                                <p style="letter-spacing: 0.03em; font-weight: 300; padding-bottom: 1em;">-$18.00</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="right">
+                                <p style="letter-spacing: 0.03em; font-weight: 300; padding-bottom: 1em;">$89.00</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="right">
+                                <p style="letter-spacing: 0.03em; font-weight: 300; padding-bottom: 1em;">$0.00</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="right">
+                                <p style="letter-spacing: 0.03em; font-weight: 300; padding-bottom: 1em;">$89.00</p>
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- / Price Column -->
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / Discount / Subtotal / Total Table -->
+                  </td>
+                </tr>
+                <!-- / Discount / Subtotal / Total Row -->
+                <!-- Payment Info Title Row -->
+                <tr>
+                  <td>
+                    <!-- Payment Info Title Table -->
+                    <table class="main-container" cellspacing="0" cellpadding="0" role="presentation" border="0" align="center" style="padding-bottom: 1em;">
+                      <tr>
+                        <td>
+                          <h3 class="items-ordered" style="font-size: 1em; font-weight: 400; letter-spacing: 0.06em; color: #bdbdbd; text-transform: uppercase;">Payment Info</h3>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / Payment Info Title Table -->
+                  </td>
+                </tr>
+                <!-- / Payment Info Title Row -->
+                <!-- Payment Info Row  -->
+                <tr>
+                  <td>
+                    <!-- Payment Info Table -->
+                    <table class="main-container" cellspacing="0" cellpadding="0" role="presentation" border="0" align="center" style="padding-bottom: 3em;">
+                      <tr>
+                        <td>
+                          <!-- 2 Column Table (1) -->
+                          <table width="75%" cellspacing="0" cellpadding="0" role="presentation" border="0" align="left">
+                            <tr>
+                              <td>
+                                <span style="letter-spacing: 0.03em;">Mastercard <span style="font-size: .75em; color: #bdbdbd;">(••••••••••••6500)</span></p>
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- / 2 Column Table (1) -->
+                          <!-- 2 Column Table (2) -->
+                          <table width="25%" cellspacing="0" cellpadding="0" role="presentation" border="0" align="right">
+                            <tr>
+                              <td align="right">
+                                <p style="letter-spacing: 0.03em; font-weight: 300;">-$18.00</p>
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- /2 Column Table (2) -->
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / Payment Info Table -->
+                  </td>
+                </tr>
+                <!-- / Payment Info Row -->
+                <!-- Billing Info & Shipping Row -->
+                <tr>
+                  <td>
+                    <!-- Billing Info & Shipping Table -->
+                    <table class="main-container" cellspacing="0" cellpadding="0" role="presentation" border="0" align="center" style="padding-bottom: 2em;">
+                      <tr>
+                        <td>
+                          <!-- Billing Info Column -->
+                          <table class="billing-info" width="50%" cellspacing="0" cellpadding="0" role="presentation" border="0" align="left">
+                            <tr>
+                              <td class="billing-td" align="left" style="padding-bottom: 1em">
+                                <h3 style="font-size: 1em; font-weight: 400; letter-spacing: 0.06em; color: #bdbdbd; text-transform: uppercase;">Billing Info</h3>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p style="letter-spacing: 0.03em; font-weight: 300; padding-bottom: .3em;">Smiles Davis</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p style="letter-spacing: 0.03em; font-weight: 300; padding-bottom: .3em;">600 Montgomery St</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p style="letter-spacing: 0.03em; font-weight: 300; padding-bottom: .3em;">San Francisco CA</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p style="letter-spacing: 0.03em; font-weight: 300; padding-bottom: .3em;">94111</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p style="letter-spacing: 0.03em; font-weight: 300; padding-bottom: .3em;">United States</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a style="color: #edc287; text-decoration: none; letter-spacing: 0.03em; font-weight: 300;" href="#">hello@SmilesDavis.yeah</a>
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- / Billing Info Column -->
+                          <!-- Shipping Info Column -->
+                          <table class="shipping-info" width="50%" cellspacing="0" cellpadding="0" role="presentation" border="0" align="right">
+                            <tr>
+                              <td class="shipping-td" align="right" style="padding-bottom: 1em;">
+                                <h3 style="font-size: 1em; font-weight: 400; letter-spacing: 0.06em; color: #bdbdbd; text-transform: uppercase;">Shipping Info</h3>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="shipping-td" align="right">
+                                <p style="letter-spacing: 0.03em; font-weight: 300; padding-bottom: .3em;">Smiles Davis</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="shipping-td" align="right">
+                                <p style="letter-spacing: 0.03em; font-weight: 300; padding-bottom: .3em;">600 Montgomery St</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="shipping-td" align="right">
+                                <p style="letter-spacing: 0.03em; font-weight: 300; padding-bottom: .3em;">San Francisco CA</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="shipping-td" align="right">
+                                <p style="letter-spacing: 0.03em; font-weight: 300; padding-bottom: .3em;">94111</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="shipping-td" align="right">
+                                <p style="letter-spacing: 0.03em; font-weight: 300;">United States</p>
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- / Shipping Info Column -->
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / Billing Info & Shipping Table -->
+                  </td>
+                </tr>
+                <!-- / Billing Info & Shipping Row -->
+                <!-- Border Row -->
+                <tr>
+                  <td>
+                    <table class="main-container" cellspacing="0" cellpadding="0" role="presentation" style="border-bottom: 2px solid #DADADA;" border="0" align="center"></table>
+                  </td>
+                </tr>
+                <!-- / Border Row -->
+                <!-- Email Contact Row -->
+                <tr>
+                  <td>
+                    <!-- Email Contact Table -->
+                    <table class="main-container" cellspacing="0" cellpadding="0" role="presentation" border="0" align="center" style="padding-top: 2.5em; padding-bottom: 4.5em;">
+                        <tr>
+                          <td align="center">
+                            <p style="font-weight: 300; letter-spacing: .03em;">If you need help with anything please don't hesitate to drop us an email: <a href="#" style="text-decoration: none; color: #edc287;">care@tens.co</a> :)</p>
+                          </td>
+                        </tr>
+                    </table>
+                    <!-- / Email Contact Table -->
+                  </td>
+                </tr>
+                <!-- / Email Contact Row -->
+              </table>
+              <!-- / Main Table -->
+            </td>
+          </tr>
+          <!-- / Main Row -->
+          <!-- Footer Row -->
+          <tr>
+            <td>
+              <!-- Footer Table -->
+              <table class="footer" cellspacing="0" cellpadding="0" role="presentation" border="0" align="center">
+                <!-- Navigation Row -->
+                <tr>
+                  <td>
+                    <!-- Navigation Table -->
+                    <table class="footer-container" border="0" align="center" cellspacing="0" cellpadding="0" style="padding-left: 2em; padding-right: 2em; padding-bottom: 2em;">
+                        <!-- 3 Column Row -->
+                        <tr>
+                          <td class="nav-td" width="33.33%" align="left">
+                            <a href="#" style="font-size: .9em; font-weight: 300; color: #999999; text-decoration: none; text-transform: uppercase; letter-spacing: .05em">Shop</a>
+                          </td>
+                          <td class="nav-td" width="33.33%" align="center">
+                            <a href="#" style="font-size: .9em; font-weight: 300; color: #999999; text-decoration: none; text-transform: uppercase; letter-spacing: .05em">About Us</a>
+                          </td>
+                          <td class="nav-td" width="33.33%" align="right">
+                            <a href="#" style="font-size: .9em; font-weight: 300; color: #999999; text-decoration: none; text-transform: uppercase; letter-spacing: .05em">Contact</a>
+                          </td>
+                        </tr>
+                          <!-- / 3 Column Row -->
+                    </table>
+                    <!-- / Navigation Table -->
+                  </td>
+                </tr>
+                <!-- / Navigation Row -->
+                <!-- Border Row -->
+                <tr>
+                  <td>
+                    <table class="footer-container" cellspacing="0" cellpadding="0" role="presentation" style="border-bottom: 2px solid #DADADA;" border="0" align="center"></table>
+                  </td>
+                </tr>
+                <!-- / Border Row -->
+                <!-- Socials & Address Row -->
+                <tr>
+                  <td>
+                    <!-- Socials & Address Table -->
+                    <table class="footer-container" border="0" align="center" cellspacing="0" cellpadding="0" style="padding-top: 2em; padding-bottom: 2em;">
+                      <tr>
+                        <!-- Left Column -->
+                        <td>
+                          <table class="left-col-footer-table" width="50%" border="0" align="left" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td align="center" style="padding-bottom: 1.25em;">
+                                <p style="font-size: .9em; font-weight: 300; color: #999999; letter-spacing: .05em">Let's hang out?</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center">
+                                <a href="#"><img style="padding: 0 .25em;" src="/img/facebook.png" alt="facebook" width="35"></a>
+                                <a href="#"><img style="padding: 0 .25em;" src="/img/twitter.png" alt="twitter" width="35"></a>
+                                <a href="#"><img style="padding: 0 .25em;" src="/img/instagram.png" alt="instagram" width="35"></a>
+                                <a href="#"><img style="padding: 0 .25em;" src="/img/youtube.png" alt="youtube" width="35"></a>
+                              </td>
+                            </tr>
+                          </table>
+                        <!-- / Left Column -->
+                        <!-- Right Column -->
+                          <table class="right-col-footer-table" width="50%" border="0" align="center" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td align="center" style="padding-bottom: .3em;">
+                                <p style="font-size: .9em; font-weight: 300; color: #999999; letter-spacing: .05em">Tens</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="padding-bottom: .3em;">
+                                <p style="font-size: .9em; font-weight: 300; color: #999999; letter-spacing: .05em">84 Miller Street</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="padding-bottom: 1.5em;">
+                                <p style="font-size: .9em; font-weight: 300; color: #999999; letter-spacing: .05em">Glasgow, G11DT</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center">
+                                <p style="font-size: .9em; font-weight: 300; color: #999999; letter-spacing: .05em">Copyright © 2018</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / Socials & Address Table -->
+                  </td>
+                </tr>
+                <!-- / Socials & Address Row -->
+                <!-- Border Row -->
+                <tr>
+                  <td>
+                    <table class="footer-container" cellspacing="0" cellpadding="0" role="presentation" style="border-bottom: 2px solid #DADADA;" border="0" align="center"></table>
+                  </td>
+                </tr>
+                <!-- / Border Row -->
+                <!-- Website Link Row -->
+                <tr>
+                  <td>
+                    <!-- Website Link Table -->
+                    <table class="footer-container" border="0" align="center" cellspacing="0" cellpadding="0" style="padding-top: 1.5em; padding-bottom: 1.5em;">
+                      <tr>
+                        <td align="center">
+                          <a style="text-decoration: none; font-weight: 300; color: #edc287;" href="#">us.tens.co</a>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / Website Link Table -->
+                  </td>
+                </tr>
+                <!-- /Website Link Row -->
+              </table>
+              <!-- / Footer Table -->
+            </td>
+          </tr>
+          <!-- / Footer Row -->
+        </table>
+        <!-- / Container Table -->
+      </td>
+    </tr>
+    <!-- / Container Row -->
+  </table>
+  <!-- TABLE END -->
+</body>
+</html>

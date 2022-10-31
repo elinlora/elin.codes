@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+    h1, h2, h3, h4, h5, h6, p {
+      margin: 0;
+      padding: 0;
+    }
+    table {
+      border-spacing: 0;
+    }
+    td {
+      padding: 0;
+    }
+    img {
+      border: 0;
+    }
+    .container {
+      width: 600px;
+      font-family: 'Roboto', sans-serif;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+      background-color: #fff;
+      color: #646464;
+    }
+    .cta-container {
+      width: 75%;
+    }
+    .content-container {
+      width: 90%;
+    }
+    .header {
+      width: 100%;
+      background-color: #fff;
+    }
+    .main {
+      width: 100%;
+      background-color: #fff;
+    }
+    .footer {
+      width: 100%;
+      background-color: #f0f0f0;
+    }
+    .footer-container {
+      width: 95%;
+    }
+    .left-col,
+    .right-col {
+      width: 45%;
+    }
+    .left-col.arca {
+      padding-top: 2.5em;
+    }
+    .right-col.toba {
+      padding-top: 1.25em;
+    }
+    .left-col.tupo {
+      padding-top: 1.75em;
+    }
+    .col-1,
+    .col-2,
+    .col-3 {
+      width: 190px;
+    }
+    /* Desktop */
+    /* @media only screen and (min-width: 960px) {
+      .container {
+        width: 960px !important;
+      }
+      .content-container {
+        width: 80% !important;
+      }
+      .left-col.arca {
+        margin-top: 0;
+      }
+      .right-col.arca {
+        margin-top: 1em;
+      }
+      .left-col.toba {
+        margin-top: 4em;
+      }
+      .right-col.toba {
+        margin-top: 0;
+      }
+      .left-col.tupo {
+        margin-top: 0;
+      }
+      .right-col.tupo {
+        margin-top: 1em;
+      }
+      .col-1,
+      .col-2,
+      .col-3 {
+        width: 304px !important;
+      }
+      .col-td {
+        width: 320px !important;
+      }
+      .col-img {
+        width: 280px !important;
+      }
+    } */
+    /* Tablet */
+    @media only screen and (max-width: 960px) {
+      .container {
+        width: 600px !important;
+      }
+    }
+    /* Mobile */
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 100% !important;
+      }
+      .content-container {
+        width: 70% !important;
+      }
+      .left-col,
+      .right-col {
+        width: 100%;
+      }
+      .col-1,
+      .col-2,
+      .col-3,
+      .col-td,
+      .col-img {
+        width: 100% !important;
+      }
+      .col-1,
+      .col-2 {
+        padding-bottom: .5em;
+      }
+    }
+  </style>
+</head>
+<body style="margin: 0; padding: 0; min-height: 100vh; min-width: 100%; background-color: #f6f6f6;">
+  <!-- TABLE START -->
+  <table width="100%" role="presentation" cellspacing="0" cellpadding="0" bgcolor="#f6f6f6" align="center" border="0">
+    <!-- Container Row -->
+    <tr>
+      <td>
+        <!-- Container Table -->
+        <table class="container" cellspacing="0" cellpadding="0" role="presentation" border="0" align="center">
+          <!-- Header Row -->
+          <tr>
+            <td>
+              <!-- Header Table -->
+              <table class="header" cellspacing="0" cellpadding="0" role="presentation" border="0" align="center">
+                <!-- Logo Row -->
+                <tr>
+                  <td>
+                    <!-- Logo Table -->
+                    <table width="100%" cellspacing="0" cellpadding="0" role="presentation" align="center" border="0">
+                      <tr>
+                        <td align="center">
+                          <a href="#">
+                            <img style="width: 300px;" src="img/article-logo.png" alt="logo">
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / Logo Table -->
+                  </td>
+                </tr>
+                <!-- / Logo Row -->
+                <!-- Hero Row -->
+                <tr>
+                  <td>
+                    <!-- Hero Table -->
+                    <table width="100%" cellspacing="0" cellpadding="0" role="presentation" align="center" border="0" style="padding-bottom: 2.5em;">
+                      <tr>
+                        <td>
+                          <a href="#"><img style="width: 100%;" src="/img/hero-banner.jpg" alt="hero"></a>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- /Hero Table -->
+                  </td>
+                </tr>
+                <!-- /Hero Row -->
+                <!-- CTA Row -->
+                <tr>
+                  <td>
+                    <!-- CTA Table -->
+                    <table class="cta-container" cellspacing="0" cellpadding="0" role="presentation" align="center" border="0" style="padding-bottom: 1em;">
+                      <tr>
+                        <td align="center" style="padding-bottom: 1.5em;">
+                          <h1 style="font-weight: 300; text-transform: uppercase; letter-spacing: .1em">Lake Tahoe</h1>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="padding-bottom: 2.5em;">
+                          <p style="font-weight: 400; line-height: 1.8; letter-spacing: 1px;">Rich, dimensional woods. Woven details. Organic textures. This collection evokes a tranquil lakeside getaway — an invitation to relax in the great outdoors.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="font-size: .9em; letter-spacing: 1.5px;">
+                          <a style="text-transform: uppercase; text-decoration: none; color: #fff; background-color: #ff6458; padding: 1em 2em; border-radius: 30px;" href="#">Shop The Look</a>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- /CTA Table -->
+                  </td>
+                </tr>
+                <!-- / CTA Row -->
+              </table>
+              <!-- / Header Table -->
+            </td>
+          </tr>
+          <!-- / Header Row -->
+          <!-- border row -->
+          <tr>
+            <td>
+              <!-- border table -->
+              <table width="80%" cellspacing="0" cellpadding="0" align="center" border="0" style="border-bottom: 1.5px solid #F0F0F0; padding-top: 2em; padding-bottom: 2em;"></table>
+              <!-- border table -->
+            </td>
+          </tr>
+          <!-- border row -->
+          <!-- Main Row -->
+          <tr>
+            <td>
+              <!-- Main Table -->
+              <table class="main" cellspacing="0" cellpadding="0" role="presentation" border="0" align="center">
+                <!-- 2 Column Row (1) -->
+                <tr>
+                  <td style="padding-top: 2.1em;">
+                    <!-- 2 Column Table (1) -->
+                    <table class="content-container" cellspacing="0" cellpadding="0" role="presensation" align="center"
+                      border="0" style="padding-bottom: 2.5em;">
+                      <tr>
+                        <td>
+                          <table class="left-col arca" cellspacing="0" cellpadding="0" role="presensation" align="left" border="0""">
+                            <tr>
+                              <td class="content-img-1-padding">
+                                <a href="#"><img style="width: 100%;" src="/img/content-img-1.jpg" alt="arca-sofa"></a>
+                              </td>
+                            </tr>
+                          </table>
+                          <table class="right-col arca" cellspacing="0" cellpadding="0" role="presensation" align="right" border="0">
+                            <tr>
+                              <td style="padding-bottom: 1em;">
+                                <h2 style="font-weight: 300; letter-spacing: .05em">Arca Sofa</h1>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="font-weight: 300; line-height: 1.8; padding-bottom: 1em;">
+                                <p>For the minimalists. Crafted from solid teak, this Scandi-inspired number is designed to weather the elements and develop a beautiful patina with time.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a style="color: #ff6458;" href="#">Shop the Arca</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / 2 Column Table (1) -->
+                  </td>
+                </tr>
+                <!-- / 2 Column Row (1) -->
+                <!-- 2 Column Row (2) -->
+                <tr>
+                  <td>
+                    <!-- 2 Column Table (2) -->
+                    <table class="content-container" cellspacing="0" cellpadding="0" role="presensation" align="center" border="0" style="padding-bottom: 2.5em;">
+                      <tr>
+                        <td>
+                          <table class="right-col toba" cellspacing="0" cellpadding="0" role="presensation" align="right" border="0">
+                            <tr>
+                              <td>
+                                <a href="#"><img style="width: 100%;" src="/img/content-img-2.jpg" alt="toba-table"></a>
+                              </td>
+                            </tr>
+                          </table>
+                          <table class="left-col toba" cellspacing="0" cellpadding="0" role="presensation" align="left" border="0">
+                          <tr>
+                            <td style="padding-bottom: 1em;">
+                              <h2 style="font-weight: 300; letter-spacing: .05em">Toba Table</h1>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="font-weight: 300; line-height: 1.8; padding-bottom: 1em;">
+                                <p>Teak again in the same vintage-inspired hue. Finished with powder-coated legs, this low-profile table maximizes space and shows off the dimensional grain of the wood. </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a style="color: #ff6458;" href="#">Shop the Toba</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / 2 Column Table (2) -->
+                  </td>
+                </tr>
+                <!-- / 2 Column Row (2) -->
+                <!-- 2 Column Row (3) -->
+                <tr>
+                  <td>
+                    <!-- 2 Column Table (3) -->
+                    <table class="content-container" cellspacing="0" cellpadding="0" role="presensation" align="center" border="0" style="padding-bottom: 2.5em;">
+                      <tr>
+                        <td>
+                          <table class="left-col tupo" cellspacing="0" cellpadding="0" role="presensation" align="left" border="0">
+                            <tr>
+                              <td>
+                                <a href="#"><img style="width: 100%;" src="/img/content-img-3.jpg" alt="tupo-lounger"></a>
+                              </td>
+                            </tr>
+                          </table>
+                          <table class="right-col tupo" cellspacing="0" cellpadding="0" role="presensation" align="right" border="0">
+                            <tr>
+                              <td style="padding-bottom: 1em;">
+                                <h2 style="font-weight: 300; letter-spacing: .05em">Tupo Lounger</h1>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="font-weight: 300; line-height: 1.8; padding-bottom: 1em;">
+                                <p>Looking for something more textural? The Tupo’s durable, intricate knots add visual interest without sacrificing comfort. Sunny relaxation awaits.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a style="color: #ff6458;" href="#">Shop the Tupo</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / 2 Column Table (3) -->
+                  </td>
+                </tr>
+                <!-- / 2 Column Row (3) -->
+              </table>
+              <!-- / Main Table -->
+            </td>
+          </tr>
+          <!-- /Main Row -->
+          <!-- Footer Row -->
+          <tr>
+            <td>
+              <!-- Footer Table -->
+              <table class="footer" cellspacing="0" cellpadding="0" role="presensation" align="center" border="0">
+                <!-- Our Article Tag Title Row -->
+                <tr>
+                  <td>
+                    <!-- Our Article Table -->
+                    <table class="footer-container" cellspacing="0" cellpadding="0" role="presensation" align="center" border="0" style="padding: 1.5em;">
+                      <tr>
+                        <td align="center">
+                          <h2 style="font-weight: 300;">#OurArticle</h2>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / Our Article Table -->
+                  </td>
+                </tr>
+                <!-- / Our Article Tag Title Row -->
+                <!--  -->
+                <!-- 3 Column Row -->
+                <tr>
+                  <td>
+                    <!-- 3 Column Table -->
+                    <table class="footer-container" cellspacing="0" cellpadding="0" role="presensation" align="center" border="0" style="padding-bottom: 2em;">
+                      <tr>
+                        <td>
+                          <!-- Col 1 Table -->
+                          <table class="col-1" cellspacing="0" cellpadding="0" role="presensation" align="left" border="0">
+                            <tr>
+                              <td align="center" class="col-td" style="width: 190px;">
+                                <a href="#">
+                                  <img class="col-img" style="width: 180px;" src="/img/footer-img-1.jpg">
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- / Col 1 Table -->
+                          <!-- Col 2 Table -->
+                          <table class="col-2" cellspacing="0" cellpadding="0" role="presensation" align="left" border="0">
+                            <tr>
+                              <td align="center" class="col-td" style="width: 190px">
+                                <a href="#">
+                                  <img class="col-img" style="width: 180px;" src="/img/footer-img-2.webp">
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- / Col 2 Table -->
+                          <!-- Col 3 Table -->
+                          <table class="col-3" cellspacing="0" cellpadding="0" role="presensation" align="left" border="0">
+                            <tr>
+                              <td align="center" class="col-td" style="width: 190px;">
+                                <a href="#">
+                                  <img class="col-img" style="width: 180px; text-align: center;" src="/img/footer-img-3.webp">
+                                </a> 
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- / Col 3 Table -->
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / 3 Column Table -->
+                  </td>
+                </tr>
+                <!-- / 3 Column Row -->
+                <!-- Our Article Tag Body Row -->
+                <tr>
+                  <td>
+                    <!-- Our Article Tag Body Table -->
+                    <table class="footer-container" cellspacing="0" cellpadding="0" role="presensation" align="center" border="0" style="padding-bottom: 1.5em;">
+                      <tr>
+                        <td align="center">
+                          <p style="font-weight: 300; letter-spacing: 0.05em; padding-bottom: .5em;">Tag your photos with #OurArticle and share</p>
+                          <p style="font-weight: 300; letter-spacing: 0.05em; padding-bottom: .5em;">how you make your home a peaceful oasis </p>
+                          <p style="font-weight: 300; letter-spacing: 0.05em;">using Article products.</p>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / Our Article Tag Body Table -->
+                  </td>
+                </tr>
+                <!-- / Our Article Tag Body Row -->
+                <!-- Socials Row -->
+                <tr>
+                  <td>
+                    <!-- Socials Table -->
+                    <table class="footer-container" cellspacing="0" cellpadding="0" role="presensation" align="center" border="0" style="padding-bottom: 1.5em;">
+                      <tr>
+                        <td align="center">
+                          <a href="#"><img style="width: 30px; padding: 0 .25em;" src="img/instagram.png" alt="instagram"></a>
+                          <a href="#"><img style="width: 30px; padding: 0 .25em;" src="img/facebook.png" alt="facebook"></a>
+                          <a href="#"><img style="width: 30px; padding: 0 .25em;" src="img/pinterest.png" alt="pinterest"></a>
+                          <a href="#"><img style="width: 30px; padding: 0 .25em;" src="img/twitter.png" alt="twitter"></a>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- / Socials Table -->
+                  </td>
+                </tr>
+                <!-- / Socials Row -->
+                <!-- Footer Bottom Row -->
+                <tr>
+                  <td>
+                    <!-- Footer Bottom Table -->
+                    <table width="70%" cellspacing="0" cellpadding="0" role="presensation" align="center" border="0"
+                      style="padding-bottom: 1.5em;">
+                        <tr>
+                          <td align="center" style="padding-bottom: 1em;">
+                            <p style="font-size: .75em;">We are sending you this email as you have signed up on our website to be the first to know when we launch new products or announce new sales.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <p style="font-size: .75em; padding-bottom: 1em;">If you would no longer like to receive these emails, unsubscribe. If you would like to <a style="color: #ff6458;" href="#">unsubscribe</a>. from all Article.com marketing emails, <a style="color: #ff6458;" href="#">click here</a>.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <p style="font-size: .75em; padding-bottom: 1em;">Privacy policy: <a style="color: #ff6458;" href="#">View our privacy policy</a>.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <p style="font-size: .75em; padding-bottom: 1em;">Article, 1010 Raymur St., Vancouver, BC, Canada, V6A 3T2</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <p style="font-size: .75em; padding-bottom: 1em;"><a style="color: #ff6458;" href="#">www.article.com</a></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <p style="font-size: .75em;">© 2020 Article. All Rights Reserved.</p>
+                          </td>
+                        </tr>
+                    </table>
+                    <!-- / Footer Bottom Table -->
+                  </td>
+                </tr>
+                <!-- / Footer Bottom Row -->
+              </table>
+              <!-- / Footer Table -->
+              </td>
+          </tr>
+          <!-- / Footer Row -->
+        </table>
+        <!-- / Container Table -->
+      </td>
+    </tr>
+    <!-- / Container Row -->
+  </table>
+  <!-- TABLE END -->
+</body>
+</html>
