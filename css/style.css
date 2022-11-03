@@ -182,17 +182,30 @@ nav.active {
 .card-widget {
   display: none;
   position: absolute;
-  top: 11rem;
   z-index: 3;
-  width: 6rem;
-  height: 6rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: .6rem;
   background-color: var(--clr-primary-800);
-  box-shadow: 0px 0px 5px rgba(0,0,0,0.09);
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.15);
+}
+
+.card-widget.mail {
+  top: 11rem;
+  right: 21rem;
+}
+
+.card-widget.web {
+  top: 39rem;
+  right: 15rem;
+}
+
+.card-widget.nyc {
+  top: 45rem;
 }
 
 .widget-img {
-  width: 3rem;
+  width: 4.5rem;
 }
 
 @media only screen and (min-width: 62em) {
