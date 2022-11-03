@@ -1,9 +1,0 @@
-<svg width="30" height="30" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-                            <g id="hamburger" transform="translate(7.000000, 7.000000)" fill-rule="nonzero" stroke="#243F50" stroke-width="3px" fill="none">
-                                <path d="M0,1.34482759 L26,1.34482759" stroke="#243F50" fill="none" stroke-width="3px"></path>
-                                <path d="M0,13 L26,13" stroke="#243F50" fill="none" stroke-width="3px"></path>
-                                <path d="M0,24.6551724 L26,24.6551724" stroke="#243F50" fill="none" stroke-width="3px"></path>
-                            </g>
-                        </g>
-                    </svg>
