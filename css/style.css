@@ -165,7 +165,7 @@ nav.active {
 }
 
 .hero {
-  min-height: calc(100vh - 9rem);
+  min-height: calc(100vh - 9.9rem);
   background-color: var(--clr-primary-400);
   display: grid;
   place-content: center;
