@@ -257,6 +257,7 @@ nav.active {
 
 .hero-card h1 {
   margin-bottom: 1em;
+  line-height: 3.3rem;
 }
 
 @media only screen and (min-width: 62em) {
