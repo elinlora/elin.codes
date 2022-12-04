@@ -498,7 +498,7 @@ nav.active {
 .project-email:hover,
 .project-web:hover .project-view,
 .project-email:hover .project-view {
-  opacity: 1;
+  opacity: 100%;
   transform: scale(102%);
 }
 
