@@ -467,6 +467,14 @@ nav.active {
   gap: 2em;
 }
 
+.project-email,
+.project-web {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
 .project-email {
   width: 10rem;
   height: 21rem;
@@ -481,17 +489,29 @@ nav.active {
 .project-web {
   width: 20rem;
   height: 12rem;
-  background-image: url('/img/goby-p.png');
   background-size: cover;
   transition: all .3s ease-in-out;
   border-radius: .3rem;
   box-shadow: 0px 0px 6px 1.5px rgba(0,0,0,0.07);
 }
-
 .project-web:hover,
-.project-email:hover {
-  opacity: 70%;
+.project-email:hover,
+.project-web:hover .project-view,
+.project-email:hover .project-view {
+  opacity: 1;
   transform: scale(102%);
+}
+
+.project-view {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #000;
+  padding: .5em 0;
+  width: 100%;
+  opacity: 0;
 }
 
 .button {
